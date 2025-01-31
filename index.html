@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Transaction Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Why Does My Wallet Feel Lighter on Sundays?</h1>
+            <p class="subtitle">A Data-Driven Journey Through My UPI Transactions</p>
+        </div>
+        <div class="header-wave"></div>
+    </header>
+
+    <main>
+        <section id="spark">
+            <h2>1. The Spark: Why Track UPI Transactions?</h2>
+            <p>As a data enthusiast, I often find myself exploring numbers in my everyday life. This time, I turned my
+                attention to my UPI transactions. We make digital payments almost unconsciously—whether it's a quick
+                coffee, groceries, or an impulsive online order. But what if I took a step back and analyzed my spending
+                patterns? Could I uncover habits I wasn't even aware of?</p>
+            <p>So, I decided to collect my UPI transaction data for three months and visualize it.</p>
+        </section>
+
+        <section id="patterns">
+            <h2>2. Unveiling the Spending Patterns</h2>
+
+            <article class="analysis-card">
+                <h3>How Much Do I Usually Spend? </h3>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>I started by plotting a histogram of transaction amounts. This gave me a clear picture of how
+                            my payments are distributed—are they mostly small daily expenses, or do large purchases
+                            dominate?</p>
+                        <ul>
+                            <li>The majority of my transactions fell in the <b>small to mid-range category</b>, meaning
+                                I tend
+                                to make frequent low-value payments rather than occasional high-value ones.</li>
+                            <li>A few outliers represented expensive purchases, which stood out from my usual spending
+                                habits.</li>
+                        </ul>
+                        <p>This initial insight set the stage for deeper analysis.</p>
+                    </div>
+                    <div class="chart-wrapper">
+                        <img src="images/histogram.png" alt="Transaction Amount Distribution Histogram" class="chart">
+                    </div>
+                </div>
+            </article>
+
+            <article class="analysis-card">
+                <h3>Big Spender or Small Purchases? </h3>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>To get a clearer sense of how often I make small versus large payments, I created a pie chart
+                            dividing transactions into two categories:</p>
+                        <ul>
+                            <li>Small transactions (< ₹200)</li>
+                            <li>Large transactions (≥ ₹200)</li>
+                        </ul>
+                        <p>Surprisingly, a significant portion of my payments <b>(96%)</b> were small transactions,
+                            likely for daily
+                            expenses like snacks and stuff. However, the large transactions, though less frequent,
+                            contributed significantly to my total spend.</p>
+                    </div>
+                    <div class="chart-wrapper">
+                        <img src="images/pie.png" alt="Large vs Small Transactions Pie Chart" class="chart">
+                    </div>
+                </div>
+            </article>
+
+            <article class="analysis-card">
+                <h3>When Do I Spend the Most? </h3>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>Next, I wanted to see how my spending fluctuated across the month. A line graph plotting
+                            daily transactions helped me visualize spending peaks.</p>
+                        <p><strong>Key Observations:</strong></p>
+                        <ul>
+                            <li>Some days saw a spike in spending—probably due to paying bills, weekend outings, or
+                                online shopping.</li>
+                            <li>On other days, my spending was minimal, reflecting no major expenses.</li>
+                        </ul>
+                        <p>Looking at these fluctuations helped me identify high-expenditure days and potential areas
+                            where I could cut down.</p>
+                    </div>
+                    <div class="chart-wrapper">
+                        <img src="images/peaks.png" alt="Daily Expenses Line Graph" class="chart">
+                    </div>
+                </div>
+            </article>
+
+            <article class="analysis-card">
+                <h3>Scattered Spending </h3>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>To make my visualization even more insightful, I created a scatter plot where each dot
+                            represented a transaction, and its size was proportional to the amount spent.</p>
+                        <p><strong>Takeaways:</strong></p>
+                        <ul>
+                            <li>The scatter plot vividly displayed clusters of small payments and occasional large
+                                spikes.</li>
+                            <li>It reinforced the idea that while smaller transactions are frequent, the larger ones
+                                make up a significant portion of total spending.</li>
+                        </ul>
+                    </div>
+                    <div class="chart-wrapper">
+                        <img src="images/scatter.png" alt="Scatter Plot of Transactions" class="chart">
+                    </div>
+                </div>
+            </article>
+
+            <article class="analysis-card">
+                <h3>Do Weekends Cost Me More? </h3>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>To wrap up, I looked at how much I spent on each weekday using a bar chart.</p>
+                        <p><strong>Findings:</strong></p>
+                        <ul>
+                            <li><b>Sunday</b> saw the highest spending followed by <b>Monday</b>, likely due to I stock
+                                all my snacks for
+                                the week.</li>
+                            <li>Midweek payments were relatively lower, with most transactions happening on Monday and
+                                Sunday—probably routine payments like groceries or online orders.</li>
+                            <li>Slight spending peak on <b>Thursday</b>, with most transactions happening on Monday and
+                                Sunday—probably due to snacks running out, I spend again to refil them.</li>
+                        </ul>
+                        <p>This analysis helped me recognize when I'm most likely to overspend and be more mindful of
+                            unnecessary purchases.</p>
+                    </div>
+                    <div class="chart-wrapper">
+                        <img src="images/bar.png" alt="Total Spend Per Weekday Bar Chart" class="chart">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="takeaways">
+            <h2>3. Key Takeaways & Personal Insights</h2>
+            <div class="takeaways-grid">
+                <div class="takeaway-card">
+                    <div class="takeaway-icon">💰</div>
+                    <p>Small but frequent transactions add up!</p>
+                </div>
+                <div class="takeaway-card">
+                    <div class="takeaway-icon">📅</div>
+                    <p>I tend to spend the most on <b>Sunday</b> and <b>Monday</b>.</p>
+                </div>
+                <div class="takeaway-card">
+                    <div class="takeaway-icon">⚠️</div>
+                    <p>Certain days see heavy expenses—potentially avoidable.</p>
+                </div>
+                <div class="takeaway-card">
+                    <div class="takeaway-icon">💸</div>
+                    <p>A few high-value transactions significantly impact my total spend.</p>
+                </div>
+            </div>
+            <p>
+                📖 Every week, I unknowingly follow a pattern—<b>Sundays</b> burns a hole in my pocket. It is my biggest
+                spending day, possibly due to weekend shopping or treating myself. Interestingly, <b>Saturdays</b> are my
+                quietest days, with just a few transactions.
+            </p>
+            <p class="next-step"><strong>Next Step?</strong> <br><br>I'll start tracking my transactions more regularly
+                and set spending limits to optimize my expenses!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ and data by <b>Vasu</b></p>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.analysis-card', { delay: 200, distance: '50px', origin: 'bottom' });
+        ScrollReveal().reveal('.takeaway-card', { delay: 200, interval: 200, distance: '50px', origin: 'bottom' });
+    </script>
+</body>
+
+</html>
